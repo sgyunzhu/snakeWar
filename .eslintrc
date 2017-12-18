@@ -1,0 +1,33 @@
+{
+    "parserOption":{
+        "ecmaVersion":6, // 指定ES支持的版本号
+        "sourceType":"module",//指定来源类型有两种"script"和"module"
+        "ecmaFeatures":{
+            //ecmaFeatures指定你想使用那些额外的语言特性
+            "jsx": true, //启动JSX
+        },
+        "parser": "babel-eslint",//默认使用esprima做脚本解析,也可以切换babel=eslint来进行解析
+        "env":{
+            //enviroment可以预设好其他环境的全局变量,入browern,node环境变量
+            "brower": true,
+            "node": true,
+            "es6": true,
+            "mocha": true
+        },
+        "plugins":[
+            //ESlint允许使用第三方插件
+            "react"
+        ],
+        "extends":[
+            //Extends是EsLint默认推荐的验,证你可以使用配置选择那些校验是你所需要的
+            "eslint:recommend"
+        ],
+        "rules": [
+            //自定义规则
+        ],
+        "globals": {
+            
+        }
+
+    }
+}
