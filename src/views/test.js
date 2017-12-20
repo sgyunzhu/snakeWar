@@ -1,8 +1,8 @@
 import React,{Component} from "react";
 
+
 class Test extends Component{
     constructors(props){
-        
         this.state={};
     };
     componentWillMount(){
@@ -13,9 +13,11 @@ class Test extends Component{
     }
 
     render(){
-        return(<div>
-                 <p>Hello world</p>
-               </div>)
+        return(
+                <div>
+                    <p>Hello world</p>
+                </div>
+            )
     }
 }
 export default Test;

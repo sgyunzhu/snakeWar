@@ -26,7 +26,7 @@ module.exports={
     output:{
         path: path.resolve(APP_PATH,"dist"),
         filename: '[hash:8].bundle.js',
-        publicPath: 'https://www.github.com/sgyunzhu',//运行时的访问路径(最终打包输出的地址)
+        publicPath: '',//运行时的访问路径(最终打包输出的地址)
     },
     watch: true,
     module:{
@@ -71,12 +71,11 @@ module.exports={
         new OpenBrowserPlugin({
             url: 'http://localhost:8080/',
         }),
-
+        
     ],
     resolve:{
+
         extensions: ['.js','.jsx'], //指定可以被import的后缀名为..的文件
     },
     devtool: 'source-map', //使得调试更加的容易,显示代码运行的具体细节  
-    ROOT_PATH,
-    APP_PATH
 }
