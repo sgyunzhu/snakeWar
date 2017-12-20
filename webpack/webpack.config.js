@@ -77,4 +77,6 @@ module.exports={
         extensions: ['.js','.jsx'], //指定可以被import的后缀名为..的文件
     },
     devtool: 'source-map', //使得调试更加的容易,显示代码运行的具体细节  
+    ROOT_PATH,
+    APP_PATH
 }
